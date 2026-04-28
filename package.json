@@ -1,0 +1,25 @@
+{
+  "name": "swd_assignment2_yutian_wang_3184482",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yutiantian613-commits/Yutian_Wang_3184482_A2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yutiantian613-commits/Yutian_Wang_3184482_A2/issues"
+  },
+  "homepage": "https://github.com/yutiantian613-commits/Yutian_Wang_3184482_A2#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
