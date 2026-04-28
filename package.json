@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/yutiantian613-commits/Yutian_Wang_3184482_A2#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "xss": "^1.0.15"
   }
 }

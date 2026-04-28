@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Appliance</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        form { margin-bottom: 20px; }
+        input { margin-bottom: 10px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Update Appliance Details</h2>
+    <p>Enter the Serial Number of the appliance you want to update.</p>
+    
+    <form action="/update-appliance" method="POST">
+        <label for="serial_number">Appliance Serial Number:</label><br>
+        <input type="text" id="serial_number" name="serial_number" required><br><br>
+
+        <label for="new_brand">Update Brand To:</label><br>
+        <input type="text" id="new_brand" name="new_brand" required><br><br>
+
+        <label for="new_cost">Update Cost To (€):</label><br>
+        <input type="number" id="new_cost" name="new_cost" step="0.01" required><br><br>
+
+        <button type="submit">Update Appliance</button>
+    </form>
+    
+    <br>
+    <a href="index.html">Go Back to Home</a>
+</body>
+</html>
