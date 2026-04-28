@@ -1,0 +1,25 @@
+CREATE DATABASE IF NOT EXISTS household_inventory;
+USE household_inventory;
+
+CREATE TABLE User (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Address VARCHAR(255) NOT NULL,
+    Mobile VARCHAR(20) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Eircode VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Appliance (
+    ApplianceID INT AUTO_INCREMENT PRIMARY KEY,
+    ApplianceType VARCHAR(50) NOT NULL,
+    Brand VARCHAR(50) NOT NULL,
+    ModelNumber VARCHAR(100) NOT NULL,
+    SerialNumber VARCHAR(100) NOT NULL UNIQUE,
+    PurchaseDate DATE NOT NULL,
+    WarrantyExpirationDate DATE NOT NULL,
+    CostOfAppliance DECIMAL(10, 2) NOT NULL,
+    UserID INT NOT NULL, 
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE
+);
